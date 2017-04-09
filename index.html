@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>BeMEAN | Palestras</title>
+        <title>BeMEAN Palestras</title>
         <!-- ARQUIVOS CSS -->
-        <link rel="stylesheet" href="statics/css/style.min.css">
-        <link rel="stylesheet" href="statics/css/stil.css">
-        <style>
-            .center {
-                margin: 0 auto;
-                width: 100%;
-                text-align: center;
-            }
-        </style>
+        <link rel="stylesheet" href="./statics/css/style.min.css">
+        <link rel="stylesheet" href="./statics/css/stil.css">
     </head>
     <body>
         <div class="center grid-100 mobile-grid-100 tablet-grid-100">
-            <img src="statics/img/logo-webschool.png" alt="Logo">
+            <img src="./statics/img/logo-webschool.png" alt="Logo da Webschool" style="text-align: center;">
         </div>
-        <h1>BeMEAN | Palestras</h1>
-        <div id="container"></div>
+        <h1>BeMEAN Palestras</h1>
+        <!-- Container onde será mostrado os vídeos -->
+        <div id="videos"></div>
+        <br>
         <!-- ARQUIVOS JS -->
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="statics/js/lib.min.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./statics/js/lib.min.js"></script>
         <script type="text/javascript">
             YPlaylist.init({
                 playlist: 'PL77JVjKTJT2jjVLzIBkgsvqzBhnH44TXa',
                 apiKey: 'AIzaSyCTWXTYYIJaKZK6Ful8qpz0b8WoIKZy7w8',
-                container: $('#container'),
-                shuffle: false
+                container: $('#videos'),
+                shuffle: true
             });
         </script>
     </body>
